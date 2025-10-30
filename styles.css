@@ -86,9 +86,12 @@ body {
 }
 
 .logo-icon {
-    width: 40px;
-    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
     object-fit: contain;
+    display: block;
 }
 
 .nav-links {
@@ -145,8 +148,10 @@ body {
 }
 
 .hero-icon {
-    width: 120px;
-    height: 120px;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
     object-fit: contain;
     margin: 0 auto 1.5rem;
     display: block;
@@ -368,13 +373,17 @@ body {
     }
     
     .logo-icon {
-        width: 32px;
-        height: 32px;
+        max-width: 32px;
+        max-height: 32px;
+        width: auto;
+        height: auto;
     }
     
     .hero-icon {
-        width: 80px;
-        height: 80px;
+        max-width: 100px;
+        max-height: 100px;
+        width: auto;
+        height: auto;
     }
     
     .hero h1 {
@@ -418,8 +427,10 @@ body {
     }
     
     .hero-icon {
-        width: 60px;
-        height: 60px;
+        max-width: 80px;
+        max-height: 80px;
+        width: auto;
+        height: auto;
     }
     
     .hero h1 {
