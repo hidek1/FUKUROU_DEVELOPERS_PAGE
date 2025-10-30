@@ -291,9 +291,25 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+.app-feature-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.app-feature-icon {
+    max-width: 48px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 .app-feature h3 {
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    margin: 0;
     color: #333;
 }
 
