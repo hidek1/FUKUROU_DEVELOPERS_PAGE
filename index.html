@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fukurou Developers - Bringing joy to learning and embracing challenges!</title>
-    <meta name="description" content="Fukurou Developersは、学習に喜びをもたらし、挑戦を受け入れることを目的とした組織です。革新的な教育技術で学習体験を変革します。">
+    <meta name="description" content="Fukurou Developersは、学びに楽しさを、挑戦に喜びをもたらすことを目的とした組織です。革新的な教育技術で学習体験を変革します。">
     <meta name="keywords" content="Fukurou Developers, 学習の喜び, 挑戦, 教育技術, イノベーション, 学習体験, 教育変革">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -15,38 +20,36 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fukurou-developers.github.io/">
     <meta property="og:title" content="Fukurou Developers - Bringing joy to learning and embracing challenges!">
-    <meta property="og:description" content="学習に喜びをもたらし、挑戦を受け入れることを目的とした組織です。革新的な教育技術で学習体験を変革します。">
+    <meta property="og:description" content="学びに楽しさを、挑戦に喜びをもたらすことを目的とした組織です。革新的な教育技術で学習体験を変革します。">
     <meta property="og:image" content="https://fukurou-developers.github.io/images/og-image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://fukurou-developers.github.io/">
     <meta property="twitter:title" content="Fukurou Developers - Bringing joy to learning and embracing challenges!">
-    <meta property="twitter:description" content="学習に喜びをもたらし、挑戦を受け入れることを目的とした組織です。革新的な教育技術で学習体験を変革します。">
+    <meta property="twitter:description" content="学びに楽しさを、挑戦に喜びをもたらすことを目的とした組織です。革新的な教育技術で学習体験を変革します。">
     <meta property="twitter:image" content="https://fukurou-developers.github.io/images/og-image.png">
     <meta name="google-site-verification" content="fSNo6ExH4viRhM7E2N8Kftn57ZOWuWIa9VlxyRLeggQ" />
 
 </head>
 
 <body>
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <button class="lang-btn active" onclick="showJapanese()">日本語</button>
-        <button class="lang-btn" onclick="showEnglish()">English</button>
-    </div>
-
     <!-- Header -->
     <header class="header">
         <nav class="nav container">
             <a href="#" class="logo">
                 <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="logo-icon">
-                Fukurou Developers
+                <span class="logo-text">Fukurou Developers</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" onclick="showJapanese()">日本語</button>
+                <button class="lang-btn" onclick="showEnglish()">English</button>
+            </div>
         </nav>
     </header>
 
@@ -54,14 +57,22 @@
     <section class="hero">
         <div class="container">
             <div id="hero-ja">
-                <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon">
+                <div class="hero-characters">
+                    <img src="images/character/owl_student_girl.png" alt="フクロウ生徒（女の子）" class="hero-owl hero-owl-left">
+                    <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon">
+                    <img src="images/character/owl_student_boy.png" alt="フクロウ生徒（男の子）" class="hero-owl hero-owl-right">
+                </div>
                 <h1>Fukurou Developers</h1>
-                <p>学習に喜びをもたらし、挑戦を受け入れる</p>
+                <p>学びに楽しさを、挑戦に喜びを</p>
                 <p class="hero-subtitle">Bringing joy to learning and embracing challenges!</p>
                 <a href="#about" class="cta-button">私たちについて</a>
             </div>
             <div id="hero-en" class="hidden">
-                <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon">
+                <div class="hero-characters">
+                    <img src="images/character/owl_student_girl.png" alt="Owl Student (Girl)" class="hero-owl hero-owl-left">
+                    <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon">
+                    <img src="images/character/owl_student_boy.png" alt="Owl Student (Boy)" class="hero-owl hero-owl-right">
+                </div>
                 <h1>Fukurou Developers</h1>
                 <p>Bringing joy to learning and embracing challenges!</p>
                 <a href="#about" class="cta-button">About Us</a>
@@ -76,22 +87,28 @@
             <section id="about" class="section">
                 <div id="about-ja">
                     <h2>私たちについて</h2>
-                    <p>Fukurou Developersは、学習に喜びをもたらし、挑戦を受け入れることを使命としています。革新的な技術と創造性を組み合わせて、学習体験を変革し、すべての人に学ぶ喜びを提供します。
+                    <p>Fukurou Developersは、学びに楽しさを、挑戦に喜びをもたらすことを使命としています。革新的な技術と創造性を組み合わせて、学習体験を変革し、すべての人に学ぶ楽しさを提供します。
                     </p>
 
                     <div class="features-grid">
                         <div class="feature-card">
-                            <div class="feature-icon">🎯</div>
-                            <h3>挑戦を受け入れる</h3>
+                            <div class="feature-icon">
+                                <div class="icon-circle icon-orange">🎯</div>
+                            </div>
+                            <h3>挑戦に喜びを</h3>
                             <p>困難な課題も楽しみに変え、成長の機会として捉える文化を育んでいます。</p>
                         </div>
                         <div class="feature-card">
-                            <div class="feature-icon">🌟</div>
-                            <h3>学習の喜び</h3>
+                            <div class="feature-icon">
+                                <div class="icon-circle icon-turquoise">🌟</div>
+                            </div>
+                            <h3>学びに楽しさを</h3>
                             <p>学ぶことの楽しさを最大限に引き出し、継続的な成長をサポートします。</p>
                         </div>
                         <div class="feature-card">
-                            <div class="feature-icon">🚀</div>
+                            <div class="feature-icon">
+                                <div class="icon-circle icon-emerald">🚀</div>
+                            </div>
                             <h3>イノベーション</h3>
                             <p>最新技術と創造性を組み合わせて、新しい学習体験を創造します。</p>
                         </div>
@@ -106,18 +123,24 @@
 
                     <div class="features-grid">
                         <div class="feature-card">
-                            <div class="feature-icon">🎯</div>
+                            <div class="feature-icon">
+                                <div class="icon-circle icon-orange">🎯</div>
+                            </div>
                             <h3>Embracing Challenges</h3>
                             <p>We foster a culture that transforms difficult challenges into opportunities for growth
                                 and enjoyment.</p>
                         </div>
                         <div class="feature-card">
-                            <div class="feature-icon">🌟</div>
+                            <div class="feature-icon">
+                                <div class="icon-circle icon-turquoise">🌟</div>
+                            </div>
                             <h3>Joy of Learning</h3>
                             <p>We maximize the fun of learning and support continuous growth for all learners.</p>
                         </div>
                         <div class="feature-card">
-                            <div class="feature-icon">🚀</div>
+                            <div class="feature-icon">
+                                <div class="icon-circle icon-emerald">🚀</div>
+                            </div>
                             <h3>Innovation</h3>
                             <p>We combine cutting-edge technology with creativity to create new learning experiences.
                             </p>
@@ -131,7 +154,7 @@
                 <div class="container">
                     <div id="projects-ja">
                         <h2>私たちのプロジェクト</h2>
-                        <p>学習に喜びをもたらし、挑戦を受け入れる文化を育む革新的なプロジェクトを開発しています。</p>
+                        <p>学びに楽しさを、挑戦に喜びをもたらす文化を育む革新的なプロジェクトを開発しています。</p>
 
                         <div class="app-info">
                             <div class="app-feature">
@@ -142,11 +165,11 @@
                                 <p>AI技術を活用した子供向け教育アプリ。写真を通じて楽しく学習できる革新的なプラットフォームです。</p>
                             </div>
                             <div class="app-feature">
-                                <h3>🎯 挑戦型学習システム</h3>
+                                <h3>🎯 挑戦に喜びを</h3>
                                 <p>困難な課題も楽しみに変える学習システム。成長の機会として挑戦を捉える文化を育みます。</p>
                             </div>
                             <div class="app-feature">
-                                <h3>🌟 喜び重視の設計</h3>
+                                <h3>🌟 学びに楽しさを</h3>
                                 <p>学習の楽しさを最大限に引き出す設計思想。継続的な成長を自然にサポートします。</p>
                             </div>
                             <div class="app-feature">
