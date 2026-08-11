@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -55,27 +58,34 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background"></div>
         <div class="container">
             <div id="hero-ja">
-                <div class="hero-characters">
-                    <img src="images/character/owl_student_girl.png" alt="フクロウ生徒（女の子）" class="hero-owl hero-owl-left">
-                    <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon">
-                    <img src="images/character/owl_student_boy.png" alt="フクロウ生徒（男の子）" class="hero-owl hero-owl-right">
+                <div class="hero-glass-card">
+                    <div class="hero-characters">
+                        <img src="images/character/owl_student_girl.png" alt="フクロウ生徒（女の子）" class="hero-owl hero-owl-left floating">
+                        <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon floating-slow">
+                        <img src="images/character/owl_student_boy.png" alt="フクロウ生徒（男の子）" class="hero-owl hero-owl-right floating">
+                    </div>
+                    <div class="badge-wrapper"><span class="badge badge-primary"><img src="images/Pasha_Pasha/icon.png" alt="Pasha Pasha Icon" class="badge-icon"> Pasha Pasha 大ヒット中！ 🎉</span></div>
+                    <h1>Fukurou Developers</h1>
+                    <p class="hero-main-text">学びに楽しさを、挑戦に喜びを。<br>そして、あなたの写真と思い出を自由に彩ろう。</p>
+                    <p class="hero-subtitle">Bringing joy to learning and embracing challenges!</p>
+                    <a href="#projects" class="cta-button">プロジェクトを見る</a>
                 </div>
-                <h1>Fukurou Developers</h1>
-                <p>学びに楽しさを、挑戦に喜びを</p>
-                <p class="hero-subtitle">Bringing joy to learning and embracing challenges!</p>
-                <a href="#about" class="cta-button">私たちについて</a>
             </div>
             <div id="hero-en" class="hidden">
-                <div class="hero-characters">
-                    <img src="images/character/owl_student_girl.png" alt="Owl Student (Girl)" class="hero-owl hero-owl-left">
-                    <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon">
-                    <img src="images/character/owl_student_boy.png" alt="Owl Student (Boy)" class="hero-owl hero-owl-right">
+                <div class="hero-glass-card">
+                    <div class="hero-characters">
+                        <img src="images/character/owl_student_girl.png" alt="Owl Student (Girl)" class="hero-owl hero-owl-left floating">
+                        <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon floating-slow">
+                        <img src="images/character/owl_student_boy.png" alt="Owl Student (Boy)" class="hero-owl hero-owl-right floating">
+                    </div>
+                    <div class="badge-wrapper"><span class="badge badge-primary"><img src="images/Pasha_Pasha/icon.png" alt="Pasha Pasha Icon" class="badge-icon"> Pasha Pasha is a Massive Hit! 🎉</span></div>
+                    <h1>Fukurou Developers</h1>
+                    <p class="hero-main-text">Bringing joy to learning and embracing challenges.<br>Color your photos and memories freely.</p>
+                    <a href="#projects" class="cta-button">View Projects</a>
                 </div>
-                <h1>Fukurou Developers</h1>
-                <p>Bringing joy to learning and embracing challenges!</p>
-                <a href="#about" class="cta-button">About Us</a>
             </div>
         </div>
     </section>
@@ -154,60 +164,99 @@
                 <div class="container">
                     <div id="projects-ja">
                         <h2>私たちのプロジェクト</h2>
-                        <p>学びに楽しさを、挑戦に喜びをもたらす文化を育む革新的なプロジェクトを開発しています。</p>
+                        <p class="section-description">学びに楽しさを、挑戦に喜びをもたらす革新的なプロジェクトを開発しています。</p>
 
                         <div class="app-info">
-                            <div class="app-feature">
+                            <!-- Pasha Pasha -->
+                            <div class="app-feature premium-feature">
                                 <div class="app-feature-header">
-                                    <img src="images/character/owl_teacher_with_staff.png" alt="フクロウ先生" class="app-feature-icon">
-                                    <h3>フクロウ先生と写真で学ぼう！</h3>
+                                    <div class="app-feature-icon-wrapper">
+                                        <img src="images/Pasha_Pasha/icon.png" alt="Pasha Pasha" class="app-feature-icon">
+                                    </div>
+                                    <div class="app-feature-title">
+                                        <h3>Pasha Pasha (パシャパシャ)</h3>
+                                        <span class="status-badge active">好評配信中 🎉</span>
+                                    </div>
                                 </div>
-                                <p>AI技術を活用した子供向け教育アプリ。写真を通じて楽しく学習できる革新的なプラットフォームです。</p>
+                                <p class="app-feature-desc">大ヒット中のスクラップブックエディター＆写真コラージュアプリ！<br>自由なレイアウト、かわいいステッカー、手書きドゥードゥル機能で、あなたの写真と思い出を雑誌のような1ページに仕上げます。</p>
+                                <div class="app-feature-tags">
+                                    <span class="tag">#写真コラージュ</span>
+                                    <span class="tag">#スクラップブック</span>
+                                    <span class="tag">#カワイイ</span>
+                                </div>
+                                <div class="app-download-buttons">
+                                    <a href="https://apps.apple.com/ph/app/pasha-pasha/id6768145646" class="store-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-apple"></i> App Store</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.pashapasha.pasha_pasha&pcampaignid=web_share" class="store-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                                </div>
                             </div>
-                            <div class="app-feature">
-                                <h3>🎯 挑戦に喜びを</h3>
-                                <p>困難な課題も楽しみに変える学習システム。成長の機会として挑戦を捉える文化を育みます。</p>
-                            </div>
-                            <div class="app-feature">
-                                <h3>🌟 学びに楽しさを</h3>
+
+                            <!-- Innovation Info -->
+                            <div class="app-feature secondary-feature">
+                                <div class="app-feature-header">
+                                    <div class="icon-circle-small icon-turquoise">🌟</div>
+                                    <h3>学びに楽しさを</h3>
+                                </div>
                                 <p>学習の楽しさを最大限に引き出す設計思想。継続的な成長を自然にサポートします。</p>
                             </div>
-                            <div class="app-feature">
-                                <h3>🚀 イノベーション推進</h3>
+
+                            <div class="app-feature secondary-feature">
+                                <div class="app-feature-header">
+                                    <div class="icon-circle-small icon-emerald">🚀</div>
+                                    <h3>イノベーション推進</h3>
+                                </div>
                                 <p>最新技術と創造性を組み合わせて、新しい学習体験を創造し続けています。</p>
                             </div>
+
+
                         </div>
                     </div>
 
                     <div id="projects-en" class="hidden">
                         <h2>Our Projects</h2>
-                        <p>We develop innovative projects that foster a culture of bringing joy to learning and
-                            embracing challenges.</p>
+                        <p class="section-description">We develop innovative projects that foster a culture of bringing joy to learning and embracing challenges.</p>
 
                         <div class="app-info">
-                            <div class="app-feature">
+                            <!-- Pasha Pasha -->
+                            <div class="app-feature premium-feature">
                                 <div class="app-feature-header">
-                                    <img src="images/character/owl_teacher_with_staff.png" alt="Owl Sensei" class="app-feature-icon">
-                                    <h3>Learn with Owl Sensei!</h3>
+                                    <div class="app-feature-icon-wrapper">
+                                        <img src="images/Pasha_Pasha/icon.png" alt="Pasha Pasha" class="app-feature-icon">
+                                    </div>
+                                    <div class="app-feature-title">
+                                        <h3>Pasha Pasha</h3>
+                                        <span class="status-badge active">Now Available 🎉</span>
+                                    </div>
                                 </div>
-                                <p>An innovative educational app for children using AI technology. A revolutionary
-                                    platform for fun learning through photos.</p>
+                                <p class="app-feature-desc">Our smash-hit scrapbook editor and photo collage app!<br>With flexible layouts, cute stickers, and freehand doodle features, turn your photos and memories into magazine-style pages.</p>
+                                <div class="app-feature-tags">
+                                    <span class="tag">#PhotoCollage</span>
+                                    <span class="tag">#Scrapbook</span>
+                                    <span class="tag">#Kawaii</span>
+                                </div>
+                                <div class="app-download-buttons">
+                                    <a href="https://apps.apple.com/ph/app/pasha-pasha/id6768145646" class="store-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-apple"></i> App Store</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.pashapasha.pasha_pasha&pcampaignid=web_share" class="store-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                                </div>
                             </div>
-                            <div class="app-feature">
-                                <h3>🎯 Challenge-Based Learning System</h3>
-                                <p>A learning system that transforms difficult challenges into enjoyment. Fosters a
-                                    culture of viewing challenges as growth opportunities.</p>
+
+                            <!-- Innovation Info -->
+                            <div class="app-feature secondary-feature">
+                                <div class="app-feature-header">
+                                    <div class="icon-circle-small icon-turquoise">🌟</div>
+                                    <h3>Joy-Focused Design</h3>
+                                </div>
+                                <p>Design philosophy that maximizes the fun of learning. Naturally supports continuous growth and development.</p>
                             </div>
-                            <div class="app-feature">
-                                <h3>🌟 Joy-Focused Design</h3>
-                                <p>Design philosophy that maximizes the fun of learning. Naturally supports continuous
-                                    growth and development.</p>
+
+                            <div class="app-feature secondary-feature">
+                                <div class="app-feature-header">
+                                    <div class="icon-circle-small icon-emerald">🚀</div>
+                                    <h3>Innovation Drive</h3>
+                                </div>
+                                <p>Continuously creating new learning experiences by combining cutting-edge technology with creativity.</p>
                             </div>
-                            <div class="app-feature">
-                                <h3>🚀 Innovation Drive</h3>
-                                <p>Continuously creating new learning experiences by combining cutting-edge technology
-                                    with creativity.</p>
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
