@@ -9,6 +9,13 @@ window.switchLanguage = function(lang) {
         // Update dropdown
         const langSelect = document.getElementById('lang-select');
         if (langSelect) langSelect.value = 'ja';
+        
+        // Update buttons
+        const btns = document.querySelectorAll('.lang-btn');
+        if(btns.length >= 2) {
+            btns[0].classList.add('active');
+            btns[1].classList.remove('active');
+        }
     } else {
         // Hide Japanese, show English
         document.querySelectorAll('[id$="-ja"]').forEach(el => el.classList.add('hidden'));
@@ -18,6 +25,13 @@ window.switchLanguage = function(lang) {
         // Update dropdown
         const langSelect = document.getElementById('lang-select');
         if (langSelect) langSelect.value = 'en';
+        
+        // Update buttons
+        const btns = document.querySelectorAll('.lang-btn');
+        if(btns.length >= 2) {
+            btns[0].classList.remove('active');
+            btns[1].classList.add('active');
+        }
     }
 };
 

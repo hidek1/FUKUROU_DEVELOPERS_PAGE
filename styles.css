@@ -65,12 +65,42 @@ p {
     align-items: center;
 }
 
-.lang-dropdown {
+.lang-btns-desktop {
+    display: flex;
+    gap: 8px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: var(--color-text-secondary);
+}
+
+.lang-btn:hover {
+    background: rgba(139, 90, 43, 0.05);
+    color: var(--color-primary);
+}
+
+.lang-btn.active {
+    background: var(--color-deep-green);
+    border-color: var(--color-deep-green);
+    color: #fff;
+}
+
+.lang-dropdown-mobile {
+    display: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235C554B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235C554B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 12px center;
     background-size: 12px;
@@ -86,11 +116,11 @@ p {
 }
 
 /* Hide default arrow in older Edge/IE */
-.lang-dropdown::-ms-expand {
+.lang-dropdown-mobile::-ms-expand {
     display: none;
 }
 
-.lang-dropdown:focus {
+.lang-dropdown-mobile:focus {
     outline: none;
     border-color: var(--color-deep-green);
 }
@@ -476,6 +506,9 @@ p {
     /* Show logo text but slightly smaller */
     .logo-text { font-size: 1rem; }
     .nav-links { display: none; }
+    
+    .lang-btns-desktop { display: none; }
+    .lang-dropdown-mobile { display: block; }
     
     .hero { padding: 140px 0 80px; min-height: 70vh; }
     .hero h1 { font-size: 1.8rem; margin-bottom: 1rem; }
