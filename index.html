@@ -33,8 +33,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="language-switcher">
-                <button class="lang-btn" onclick="showJapanese()">日本語</button>
-                <button class="lang-btn active" onclick="showEnglish()">English</button>
+                <select id="lang-select" class="lang-dropdown" onchange="switchLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                </select>
             </div>
         </nav>
     </header>

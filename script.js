@@ -1,40 +1,27 @@
 // Language switching functionality
-function switchLanguage(lang) {
+window.switchLanguage = function(lang) {
     if (lang === 'ja') {
         // Hide English, show Japanese
         document.querySelectorAll('[id$="-en"]').forEach(el => el.classList.add('hidden'));
         document.querySelectorAll('[id$="-ja"]').forEach(el => el.classList.remove('hidden'));
         document.documentElement.lang = 'ja';
         
-        // Update buttons
-        const btns = document.querySelectorAll('.lang-btn');
-        if(btns.length >= 2) {
-            btns[0].classList.add('active'); // Japanese button
-            btns[1].classList.remove('active'); // English button
-        }
+        // Update dropdown
+        const langSelect = document.getElementById('lang-select');
+        if (langSelect) langSelect.value = 'ja';
     } else {
         // Hide Japanese, show English
         document.querySelectorAll('[id$="-ja"]').forEach(el => el.classList.add('hidden'));
         document.querySelectorAll('[id$="-en"]').forEach(el => el.classList.remove('hidden'));
         document.documentElement.lang = 'en';
         
-        // Update buttons
-        const btns = document.querySelectorAll('.lang-btn');
-        if(btns.length >= 2) {
-            btns[0].classList.remove('active');
-            btns[1].classList.add('active');
-        }
+        // Update dropdown
+        const langSelect = document.getElementById('lang-select');
+        if (langSelect) langSelect.value = 'en';
     }
-}
-
-// Global functions for HTML onclick
-window.showJapanese = function() {
-    switchLanguage('ja');
 };
 
-window.showEnglish = function() {
-    switchLanguage('en');
-};
+
 
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
