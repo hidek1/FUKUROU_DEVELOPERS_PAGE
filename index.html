@@ -1,39 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fukurou Developers - Bringing joy to learning and embracing challenges!</title>
-    <meta name="description" content="Fukurou Developersは、学びに楽しさを、挑戦に喜びをもたらすことを目的とした組織です。革新的な教育技術で学習体験を変革します。">
-    <meta name="keywords" content="Fukurou Developers, 学習の喜び, 挑戦, 教育技術, イノベーション, 学習体験, 教育変革">
-
+    <title>Fukurou Developers - Nurturing the seeds of creation</title>
+    <meta name="description" content="Fukurou Developersは、温もりあるテクノロジーで誰もが自分らしく表現できる場所を作ります。">
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fukurou-developers.github.io/">
-    <meta property="og:title" content="Fukurou Developers - Bringing joy to learning and embracing challenges!">
-    <meta property="og:description" content="学びに楽しさを、挑戦に喜びをもたらすことを目的とした組織です。革新的な教育技術で学習体験を変革します。">
-    <meta property="og:image" content="https://fukurou-developers.github.io/images/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://fukurou-developers.github.io/">
-    <meta property="twitter:title" content="Fukurou Developers - Bringing joy to learning and embracing challenges!">
-    <meta property="twitter:description" content="学びに楽しさを、挑戦に喜びをもたらすことを目的とした組織です。革新的な教育技術で学習体験を変革します。">
-    <meta property="twitter:image" content="https://fukurou-developers.github.io/images/og-image.png">
-    <meta name="google-site-verification" content="fSNo6ExH4viRhM7E2N8Kftn57ZOWuWIa9VlxyRLeggQ" />
-
 </head>
 
 <body>
@@ -41,7 +24,7 @@
     <header class="header">
         <nav class="nav container">
             <a href="#" class="logo">
-                <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="logo-icon">
+                <img src="images/character/watercolor_owl.jpg" alt="Fukurou Developers" class="logo-icon">
                 <span class="logo-text">Fukurou Developers</span>
             </a>
             <ul class="nav-links">
@@ -50,8 +33,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="language-switcher">
-                <button class="lang-btn active" onclick="showJapanese()">日本語</button>
-                <button class="lang-btn" onclick="showEnglish()">English</button>
+                <button class="lang-btn" onclick="showJapanese()">日本語</button>
+                <button class="lang-btn active" onclick="showEnglish()">English</button>
             </div>
         </nav>
     </header>
@@ -60,30 +43,17 @@
     <section class="hero">
         <div class="hero-background"></div>
         <div class="container">
-            <div id="hero-ja">
+            <div id="hero-ja" class="hidden">
                 <div class="hero-glass-card">
-                    <div class="hero-characters">
-                        <img src="images/character/owl_student_girl.png" alt="フクロウ生徒（女の子）" class="hero-owl hero-owl-left floating">
-                        <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon floating-slow">
-                        <img src="images/character/owl_student_boy.png" alt="フクロウ生徒（男の子）" class="hero-owl hero-owl-right floating">
-                    </div>
-                    <div class="badge-wrapper"><span class="badge badge-primary"><img src="images/Pasha_Pasha/icon.png" alt="Pasha Pasha Icon" class="badge-icon"> Pasha Pasha 大ヒット中！ 🎉</span></div>
-                    <h1>Fukurou Developers</h1>
-                    <p class="hero-main-text">学びに楽しさを、挑戦に喜びを。<br>そして、あなたの写真と思い出を自由に彩ろう。</p>
-                    <p class="hero-subtitle">Bringing joy to learning and embracing challenges!</p>
+                    <h1>知恵の森で、<br>創造性の種を育む。</h1>
+                    <p class="hero-main-text">テクノロジーに自然な温もりを与え、<br>誰もが自分らしく表現できる場所を作ります。</p>
                     <a href="#projects" class="cta-button">プロジェクトを見る</a>
                 </div>
             </div>
-            <div id="hero-en" class="hidden">
+            <div id="hero-en">
                 <div class="hero-glass-card">
-                    <div class="hero-characters">
-                        <img src="images/character/owl_student_girl.png" alt="Owl Student (Girl)" class="hero-owl hero-owl-left floating">
-                        <img src="images/character/owl_teacher_with_staff.png" alt="Fukurou Developers" class="hero-icon floating-slow">
-                        <img src="images/character/owl_student_boy.png" alt="Owl Student (Boy)" class="hero-owl hero-owl-right floating">
-                    </div>
-                    <div class="badge-wrapper"><span class="badge badge-primary"><img src="images/Pasha_Pasha/icon.png" alt="Pasha Pasha Icon" class="badge-icon"> Pasha Pasha is a Massive Hit! 🎉</span></div>
-                    <h1>Fukurou Developers</h1>
-                    <p class="hero-main-text">Bringing joy to learning and embracing challenges.<br>Color your photos and memories freely.</p>
+                    <h1>Nurturing the seeds of creation<br>in the forest of wisdom.</h1>
+                    <p class="hero-main-text">Giving technology natural warmth, creating a place<br>where anyone can express themselves authentically.</p>
                     <a href="#projects" class="cta-button">View Projects</a>
                 </div>
             </div>
@@ -95,65 +65,60 @@
         <div class="container">
             <!-- About Section -->
             <section id="about" class="section">
-                <div id="about-ja">
-                    <h2>私たちについて</h2>
-                    <p>Fukurou Developersは、学びに楽しさを、挑戦に喜びをもたらすことを使命としています。革新的な技術と創造性を組み合わせて、学習体験を変革し、すべての人に学ぶ楽しさを提供します。
-                    </p>
+                <div id="about-ja" class="hidden">
+                    <h2>私たちのミッション</h2>
+                    <p class="section-description">無機質なデジタルツールではなく、水彩画のような「人の手触り」や「温もり」を感じられるプロダクトを開発しています。深い森のように静かで安心できる環境を提供し、ユーザー一人ひとりの自由な創造力をサポートします。</p>
 
                     <div class="features-grid">
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <div class="icon-circle icon-orange">🎯</div>
+                                <div class="icon-circle icon-artistic"><i class="fa-solid fa-palette"></i></div>
                             </div>
-                            <h3>挑戦に喜びを</h3>
-                            <p>困難な課題も楽しみに変え、成長の機会として捉える文化を育んでいます。</p>
+                            <h3>Artistic & Warm</h3>
+                            <p>効率だけを求めるのではなく、余白や美しさ、使うときの「心地よさ」を大切にします。</p>
                         </div>
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <div class="icon-circle icon-turquoise">🌟</div>
+                                <div class="icon-circle icon-wise"><i class="fa-solid fa-feather-pointed"></i></div>
                             </div>
-                            <h3>学びに楽しさを</h3>
-                            <p>学ぶことの楽しさを最大限に引き出し、継続的な成長をサポートします。</p>
+                            <h3>Wise & Observing</h3>
+                            <p>フクロウのように静かに広く世界を見渡し、ユーザーが本当に求めている本質的な体験を形にします。</p>
                         </div>
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <div class="icon-circle icon-emerald">🚀</div>
+                                <div class="icon-circle icon-growth"><i class="fa-solid fa-seedling"></i></div>
                             </div>
-                            <h3>イノベーション</h3>
-                            <p>最新技術と創造性を組み合わせて、新しい学習体験を創造します。</p>
+                            <h3>Natural Growth</h3>
+                            <p>誰もが自分のペースで、自然体で表現を楽しめるような優しいエコシステムを作ります。</p>
                         </div>
                     </div>
                 </div>
 
-                <div id="about-en" class="hidden">
-                    <h2>About Us</h2>
-                    <p>Fukurou Developers is dedicated to bringing joy to learning and embracing challenges. We combine
-                        innovative technology with creativity to transform learning experiences and provide the joy of
-                        learning to everyone.</p>
+                <div id="about-en">
+                    <h2>Our Mission</h2>
+                    <p class="section-description">We create products with a human touch and warmth, like a watercolor painting, rather than cold digital tools. We provide a quiet, secure environment like a deep forest, supporting the free creativity of each user.</p>
 
                     <div class="features-grid">
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <div class="icon-circle icon-orange">🎯</div>
+                                <div class="icon-circle icon-artistic"><i class="fa-solid fa-palette"></i></div>
                             </div>
-                            <h3>Embracing Challenges</h3>
-                            <p>We foster a culture that transforms difficult challenges into opportunities for growth
-                                and enjoyment.</p>
+                            <h3>Artistic & Warm</h3>
+                            <p>We value negative space, beauty, and comfort of use, rather than just seeking efficiency.</p>
                         </div>
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <div class="icon-circle icon-turquoise">🌟</div>
+                                <div class="icon-circle icon-wise"><i class="fa-solid fa-feather-pointed"></i></div>
                             </div>
-                            <h3>Joy of Learning</h3>
-                            <p>We maximize the fun of learning and support continuous growth for all learners.</p>
+                            <h3>Wise & Observing</h3>
+                            <p>Like an owl, we quietly observe the world to shape the essential experiences users truly need.</p>
                         </div>
                         <div class="feature-card">
                             <div class="feature-icon">
-                                <div class="icon-circle icon-emerald">🚀</div>
+                                <div class="icon-circle icon-growth"><i class="fa-solid fa-seedling"></i></div>
                             </div>
-                            <h3>Innovation</h3>
-                            <p>We combine cutting-edge technology with creativity to create new learning experiences.
-                            </p>
+                            <h3>Natural Growth</h3>
+                            <p>We create a gentle ecosystem where everyone can enjoy expressing themselves naturally at their own pace.</p>
                         </div>
                     </div>
                 </div>
@@ -162,9 +127,9 @@
             <!-- Projects Showcase -->
             <section id="projects" class="app-showcase">
                 <div class="container">
-                    <div id="projects-ja">
-                        <h2>私たちのプロジェクト</h2>
-                        <p class="section-description">学びに楽しさを、挑戦に喜びをもたらす革新的なプロジェクトを開発しています。</p>
+                    <div id="projects-ja" class="hidden">
+                        <h2>プロダクト</h2>
+                        <p class="section-description">自由な表現と自然な成長をサポートするツールを提供しています。</p>
 
                         <div class="app-info">
                             <!-- Pasha Pasha -->
@@ -189,31 +154,12 @@
                                     <a href="https://play.google.com/store/apps/details?id=com.pashapasha.pasha_pasha&pcampaignid=web_share" class="store-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
                                 </div>
                             </div>
-
-                            <!-- Innovation Info -->
-                            <div class="app-feature secondary-feature">
-                                <div class="app-feature-header">
-                                    <div class="icon-circle-small icon-turquoise">🌟</div>
-                                    <h3>学びに楽しさを</h3>
-                                </div>
-                                <p>学習の楽しさを最大限に引き出す設計思想。継続的な成長を自然にサポートします。</p>
-                            </div>
-
-                            <div class="app-feature secondary-feature">
-                                <div class="app-feature-header">
-                                    <div class="icon-circle-small icon-emerald">🚀</div>
-                                    <h3>イノベーション推進</h3>
-                                </div>
-                                <p>最新技術と創造性を組み合わせて、新しい学習体験を創造し続けています。</p>
-                            </div>
-
-
                         </div>
                     </div>
 
-                    <div id="projects-en" class="hidden">
-                        <h2>Our Projects</h2>
-                        <p class="section-description">We develop innovative projects that foster a culture of bringing joy to learning and embracing challenges.</p>
+                    <div id="projects-en">
+                        <h2>Products</h2>
+                        <p class="section-description">Providing tools that support free expression and natural growth.</p>
 
                         <div class="app-info">
                             <!-- Pasha Pasha -->
@@ -238,25 +184,6 @@
                                     <a href="https://play.google.com/store/apps/details?id=com.pashapasha.pasha_pasha&pcampaignid=web_share" class="store-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-play"></i> Google Play</a>
                                 </div>
                             </div>
-
-                            <!-- Innovation Info -->
-                            <div class="app-feature secondary-feature">
-                                <div class="app-feature-header">
-                                    <div class="icon-circle-small icon-turquoise">🌟</div>
-                                    <h3>Joy-Focused Design</h3>
-                                </div>
-                                <p>Design philosophy that maximizes the fun of learning. Naturally supports continuous growth and development.</p>
-                            </div>
-
-                            <div class="app-feature secondary-feature">
-                                <div class="app-feature-header">
-                                    <div class="icon-circle-small icon-emerald">🚀</div>
-                                    <h3>Innovation Drive</h3>
-                                </div>
-                                <p>Continuously creating new learning experiences by combining cutting-edge technology with creativity.</p>
-                            </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -267,10 +194,9 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div id="contact-ja">
+            <div id="contact-ja" class="hidden">
                 <h2>お問い合わせ</h2>
                 <p>ご質問やご要望がございましたら、お気軽にお問い合わせください。</p>
-
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>📧 メール</h3>
@@ -279,10 +205,9 @@
                 </div>
             </div>
 
-            <div id="contact-en" class="hidden">
+            <div id="contact-en">
                 <h2>Contact Us</h2>
                 <p>If you have any questions or requests, please feel free to contact us.</p>
-
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>📧 Email</h3>
@@ -296,12 +221,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Fukurou Developers. All rights reserved.</p>
+            <p>&copy; 2026 Fukurou Developers. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
-
 </html>
