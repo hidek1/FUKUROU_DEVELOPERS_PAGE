@@ -466,9 +466,24 @@ p {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2.2rem; }
-    .hero-glass-card { padding: 20px; }
+    .header { padding: 0.5rem 0; }
+    .logo-text { display: none; } /* Hide text on mobile to save space */
     .nav-links { display: none; }
-    .app-feature { padding: 2rem; }
-    .app-feature-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    
+    .hero { padding: 140px 0 80px; min-height: 70vh; }
+    .hero h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+    .hero-main-text { font-size: 1rem; margin-bottom: 2rem; }
+    .hero-glass-card { padding: 20px 15px; }
+    
+    .section h2, .app-showcase h2 { font-size: 2rem; }
+    .section, .app-showcase { margin-bottom: 80px; }
+    
+    .feature-card { padding: 2rem 1.5rem; }
+    
+    .app-feature { padding: 1.5rem; }
+    .app-feature-header { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+    .app-feature-tags { justify-content: center; }
+    .app-download-buttons { justify-content: center; }
+    
+    .contact-item { padding: 2rem 1.5rem; width: 100%; box-sizing: border-box; }
 }
